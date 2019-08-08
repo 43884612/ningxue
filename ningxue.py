@@ -2729,7 +2729,7 @@ def bot(op):
                         if _nametarget == g.displayName:
                             targets.append(g.mid)
                     if targets == []:
-                        ningxue.sendText(msg.to,"Not found")
+                        ningxue.sendText(msg.to,"沒有用戶")
                     else:
                         for target in targets:
                             try:
@@ -2737,7 +2737,7 @@ def bot(op):
                                 ningxue.sendImageWithURL(msg.to,"http://dl.profile.line-cdn.net/" + h.pictureStatus)
                             except Exception as error:
                                 print error
-                                ningxue.sendText(msg.to,"Upload image failed.")
+                                ningxue.sendText(msg.to,"上傳圖片失敗")
 
             elif "Pp @" in msg.text:
                 if msg.toType == 2:
@@ -2749,7 +2749,7 @@ def bot(op):
                         if _nametarget == g.displayName:
                             targets.append(g.mid)
                     if targets == []:
-                        ningxue.sendText(msg.to,"Not found")
+                        ningxue.sendText(msg.to,"沒有用戶")
                     else:
                         for target in targets:
                             try:
@@ -2757,7 +2757,7 @@ def bot(op):
                                 ningxue.sendImageWithURL(msg.to,"http://dl.profile.line-cdn.net/" + h.pictureStatus)
                             except Exception as error:
                                 print error
-                                ningxue.sendText(msg.to,"Upload image failed.")
+                                ningxue.sendText(msg.to,"上傳圖片失敗")
 
             elif msg.text.lower() in ["pap owner","pap creator"]:
                                 link = ["http://dl.profile.line-cdn.net/0hFR-rB8h-GX0QCzWZMOZmKixOFxBnJR81aG9eSTUNREhtOVYqJWgFSWYDR05vOwp7K2sCGTELRUVo"]
